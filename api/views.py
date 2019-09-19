@@ -74,3 +74,11 @@ def get_category(request, id):
         return JsonResponse(result)
     except:
         raise Http404
+
+
+# Очистка БД
+# GET /categories/delete/​
+@require_GET
+def delete_everything(self):
+    Category.objects.all().delete()
+    return HttpResponse(status=200)
