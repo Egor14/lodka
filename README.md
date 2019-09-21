@@ -8,3 +8,4 @@
 Реализовано:
 - POST /categories/
 - GET /categories/2/
+- GET /categories/delete/ (очистка всей БД)
