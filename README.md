@@ -6,6 +6,6 @@
 3. python manage.py runserver
 
 Реализовано:
-- POST /categories/
-- GET /categories/2/
+- POST /categories/ ('tree' - имя параметра POST запроса)
+- GET /categories/2/ 
 - GET /categories/delete/ (очистка всей БД)
