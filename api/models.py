@@ -11,7 +11,7 @@ class CategoryManager(models.Manager):
             parents = [my_category.parent]
             # Последовательное получение родителей родителя
             while (parents[-1].parent_id != None):
-                parents.append(self.get(id=parents[-1].parent_id))
+                parents.append(parents[-1].parent)
         # Получение списка братьев и сестер(без my_category)
         siblings = (self.filter(~Q(id=my_category.id), parent_id=my_category.parent_id))
         children = self.filter(parent=my_category)
