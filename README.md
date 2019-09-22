@@ -1,6 +1,9 @@
 # Admiral-Markets - Python-Test-Assignment
 
-Для развертывания:
+Посмотреть и поработать с уже развернутым приложением можно по ссылке:
+https://categories-api-lodka.herokuapp.com
+
+Для развертывания на своей машине:
 1. pip install -r requirements.txt
 2. python manage.py migrate
 3. python manage.py runserver
